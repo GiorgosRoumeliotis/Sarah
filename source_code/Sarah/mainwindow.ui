@@ -1,0 +1,1749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QDialog" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1700</width>
+    <height>920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sarah</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	font-family:century gothic;
+	font-size: 16px;
+}
+
+QVBoxLayout{
+	background:transparent;
+}
+
+QFrame{
+	background:rgba(0, 0, 0, 200);
+	border-radius: 15px;
+}
+
+#planner7days{
+	background:green;
+	border-radius: 5px;
+
+}
+#profile_pic{
+	background:green;
+}
+#frame_2{
+	background:transparent;
+}
+#frame_logo{
+	background:transparent;
+}
+#frame_status{
+	background:transparent;
+}
+QPushButton{
+	font-size:14px;
+	background:green;
+	border-radius: 15px;
+}
+
+QToolButton{
+	background:green;
+	border-style: solid;
+	color:darkgray;
+	font-size:13px;
+	border-radius: 60px;
+}
+
+QToolButton:hover{
+	background:#16a016;
+	border-style: solid;
+	color:darkgray;
+	font-size:13px;
+	border-radius: 60px;
+}
+
+QLabel{
+	color: white;
+	background:transparent;
+}
+
+QPushButton{
+	color:white;
+	/* border-radius: 15px; */
+}
+
+QPushButton:hover{
+	/*color:darkgray;*/
+	background-color:#16a016;
+	border: black;
+	/* border-radius: 15px; */
+}
+
+QLineEdit{
+	background: transparent;
+	border: none;
+	color: #717072;
+	border-bottom: 1px solid #717072;
+	font-size: 18px;
+
+}
+
+QCheckBox{
+	font-size:13px;
+	background: none;
+	color:darkgray;
+}
+
+#MainWindow{
+	background: url(/home/groumeliotis/project/Sarah/images/background.jpg);
+}
+
+#pushButton_forgot_pwd{
+	background: transparent;
+	font-size: 12px;
+
+}
+#pushButton_forgot_pwd:hover{
+	background: transparent;
+	font-size: 13px;
+}
+
+#label_usr{
+	font-size:15px;
+	color:red;
+}
+#label_pwd{
+	font-size:15px;
+	color:red;
+}
+#label_status{
+	font-size:14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#welcome{
+	font-size:20px;
+	font-family:Courier New;
+	/* font-family:Comic Sans MS;
+   font-family: 'Times New Roman', Times, serif;*/
+}
+
+QRadioButton{
+	font-size: 14px;
+	color: darkgray;
+}
+
+QDateEdit{
+	font-size: 14px;
+	color: darkgray;
+}
+
+QSpinBox{
+	font-size: 14px;
+	color: darkgray;
+}
+
+QDoubleSpinBox{
+	font-size: 14px;
+	color: darkgray;
+}
+#label_userExist{
+	font-size:15px;
+	color:red;
+}
+#label_pnm{
+	font-size:15px;
+	color:red;
+}
+#label_gender{
+	font-size:15px;
+	color:red;
+}
+
+#label_weight{
+	font-size:15px;
+	color:red;
+}
+
+#label_height{
+	font-size:15px;
+	color:red;
+}
+
+#label_lname{
+	font-size:15px;
+	color:red;
+}
+
+#label_fname{
+	font-size:15px;
+	color:red;
+}
+/*******************************************************************************************************************************************************************************/
+
+#day1_breakfast{
+
+	border-radius:  0px;
+}
+#day2_breakfast{
+	border-radius:  0px;
+}
+#day3_breakfast{
+	border-radius:  0px;
+}
+#day4_breakfast{
+	border-radius:  0px;
+}
+#day5_breakfast{
+	border-radius:  0px;
+}
+#day6_breakfast{
+	border-radius:  0px;
+}
+#day7_breakfast{
+	border-radius:  0px;
+}
+#day1_firstS{
+	border-radius:  0px;
+}
+#day2_firstS{
+	border-radius:  0px;
+}
+#day3_firstS{
+	border-radius:  0px;
+}
+#day4_firstS{
+	border-radius:  0px;
+}
+#day5_firstS{
+	border-radius:  0px;
+}
+#day6_firstS{
+	border-radius:  0px;
+}
+#day7_firstS{
+	border-radius:  0px;
+}
+#day1_lunch{
+	border-radius:  0px;
+}
+#day2_lunch{
+	border-radius:  0px;
+}
+#day3_lunch{
+	border-radius:  0px;
+}
+#day4_lunch{
+	border-radius:  0px;
+}
+#day5_lunch{
+	border-radius:  0px;
+}
+#day6_lunch{
+	border-radius:  0px;
+}
+#day7_lunch{
+	border-radius:  0px;
+}
+#day1_SecS{
+	border-radius:  0px;
+}
+#day2_SecS{
+	border-radius:  0px;
+}
+#day3_SecS{
+	border-radius:  0px;
+}
+#day4_SecS{
+	border-radius:  0px;
+}
+#day5_SecS{
+	border-radius:  0px;
+}
+#day6_SecS{
+	border-radius:  0px;
+}
+#day7_SecS{
+	border-radius:  0px;
+}
+#day1_dinner{
+	border-radius:  0px;
+}
+#day2_dinner{
+	border-radius:  0px;
+}
+#day3_dinner{
+	border-radius:  0px;
+}
+#day4_dinner{
+	border-radius:  0px;
+}
+#day5_dinner{
+	border-radius:  0px;
+}
+#day6_dinner{
+	border-radius:  0px;
+}
+#day7_dinner{
+	border-radius:  0px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_10">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="1">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="4" column="0">
+         <spacer name="horizontalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="3">
+         <spacer name="horizontalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="3">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="6" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="planner">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../images/planner.png</normaloff>../../images/planner.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../images/recipes.png</normaloff>../../images/recipes.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="database">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../images/database.png</normaloff>../../images/database.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="settings">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../images/settings.png</normaloff>../../images/settings.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="1">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Preferred</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+         <widget class="QLabel" name="welcome">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3" alignment="Qt::AlignRight|Qt::AlignTop">
+         <widget class="QFrame" name="frame_status">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_status">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_status_icon">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QFrame" name="profile_pic">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="1" column="1" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLabel" name="profile">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>60</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_logo">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0" alignment="Qt::AlignLeft|Qt::AlignTop">
+            <widget class="QLabel" name="label_logo">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="1">
+         <widget class="QFrame" name="planner7days">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>800</width>
+            <height>400</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="1" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QScrollArea" name="scroll">
+               <property name="styleSheet">
+                <string notr="true">background:rgba(0, 0, 0, 255);</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="day1_br_gr">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_6">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day1_br"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scroll1">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="day1_fs_gr">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_9">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day1_fs"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scroll2">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="day1_l_gr">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>84</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_10">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day1_l"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scroll3">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="day1_ss_gr">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_11">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day1_ss"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scroll4">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="day1_d_gr">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_12">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day1_d"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="3">
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QScrollArea" name="scrollArea_13">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_18">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_23">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day4_br"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_14">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_19">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_24">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day4_fs"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_15">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_20">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>84</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_25">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day4_l"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_11">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_16">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_26">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day4_ss"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_12">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_17">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_27">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day4_d"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="5">
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QScrollArea" name="scrollArea_22">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_27">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_33">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day6_br"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_23">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_28">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_34">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day6_fs"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_24">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_29">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>84</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_35">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day6_l"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_25">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_30">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_36">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day6_ss"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_21">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_26">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_37">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day6_d"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="6">
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <widget class="QScrollArea" name="scrollArea_27">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_33">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_42">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day7_br"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_26">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_31">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_41">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day7_fs"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_29">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_35">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>84</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_40">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day7_l"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_30">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_40">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_39">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day7_ss"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_28">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_34">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_38">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day7_d"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="4">
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QScrollArea" name="scrollArea_16">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_21">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_28">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day5_br"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_18">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_23">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_29">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day5_fs"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_19">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_24">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>84</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_30">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day5_l"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_20">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_25">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_31">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day5_ss"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_17">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_22">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_32">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day5_d"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="2">
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QScrollArea" name="scrollArea_10">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_15">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_18">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day3_br"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_9">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_14">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_19">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day3_fs"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_8">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_13">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>84</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_20">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day3_l"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_7">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_12">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_21">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day3_ss"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_6">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_11">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>215</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_22">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day3_d"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="0" colspan="7" alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="weekly_calories">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Diet of 2674 Calories</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="first_day">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font-size:20px</string>
+             </property>
+             <property name="text">
+              <string>MONDAY</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1" alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="second_day">
+             <property name="styleSheet">
+              <string notr="true">font-size:20px</string>
+             </property>
+             <property name="text">
+              <string>TUESDAY</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2" alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="third_day">
+             <property name="styleSheet">
+              <string notr="true">font-size:20px</string>
+             </property>
+             <property name="text">
+              <string>WEDNESDAY</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3" alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="forth_day">
+             <property name="styleSheet">
+              <string notr="true">font-size:20px</string>
+             </property>
+             <property name="text">
+              <string>THURSDAY</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4" alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="fifth_day">
+             <property name="styleSheet">
+              <string notr="true">font-size:20px</string>
+             </property>
+             <property name="text">
+              <string>FRIDAY</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5" alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="six_day">
+             <property name="styleSheet">
+              <string notr="true">font-size:20px</string>
+             </property>
+             <property name="text">
+              <string>SATURDAY</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6" alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="seventh_day">
+             <property name="styleSheet">
+              <string notr="true">font-size:20px</string>
+             </property>
+             <property name="text">
+              <string>SUNDAY</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QScrollArea" name="scrollArea_5">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_10">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_17">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day2_br"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_4">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_9">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_16">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day2_fs"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_3">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_8">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>84</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_15">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day2_l"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_2">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_7">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_14">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day2_ss"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollArea">
+               <property name="styleSheet">
+                <string notr="true">background:black;</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_6">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>214</width>
+                  <height>85</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_13">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="day2_d"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

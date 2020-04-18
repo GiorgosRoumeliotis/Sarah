@@ -1,0 +1,10 @@
+#define Underweight 10
+#define Healthy 11
+#define Overweight 12
+#define Obese 13
+#define Male 14
+#define Female 15
+#define Sedentary_Life 16
+#define Slightly_Active 17
+#define Moderate_Active 18
+#define Active_Lifestyle 19
