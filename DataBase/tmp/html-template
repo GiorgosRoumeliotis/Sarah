@@ -1,0 +1,68 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Meat Balls</title>
+	</head>
+	<body>
+		<style type="txt/css">
+			*{
+				background-color:black;
+				color:orange;
+				font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+			}
+			
+			h1 , img, p{
+				text-align:center;
+			}
+			
+			.execution{
+				text-align:center;
+			}
+
+			
+			
+			.ingredients h2{
+				font-size:10px;
+			}	
+			ul{
+				text-align:left;
+				
+			}
+		</style>
+		<h1>Meat Balls</h1><br>
+		<p><img src="/home/groumeliotis/Pictures/meatballs.jpg"></p>
+		<div class="ingredients"> 
+        <small>
+			<h2><i>Ingredients</i></h2>
+			<ul>
+				<li>1 lb ground beef</li>
+				<li>   1 lb ground pork</li>
+                <li>     1/2 cup Italian breadcrumbs</li>
+                <li>     1/3 cup milk</li>
+                <li>     1/4 cup onion, diced</li>
+                <li>     1/2 teaspoon garlic powder</li>
+                <li>     1 teaspoon Italian seasoning</li>
+                <li>     1 egg</li>
+                <li>     1/4 cup parsley chopped</li>
+                <li>     1/4 cup shredded parmesan</li>
+                <li>     salt and pepper to taste</li>
+			</ul>
+        </small>
+		</div>
+		<div class="execution">
+			<h2>Instructions</h2>	
+			<p>
+                Preheat oven to 400 degrees F. <br>
+                In a medium bowl, mix all ingredients until just combined. <br>
+                Shape mixture into 48 meatballs, approximately 1 1/2 tablespoons each.  <br>
+                Bake 18-20 minutes or until cooked through.  <br>
+            </p>
+        </div>
+	</body>
+</html>
+
+
+
+
+
+
